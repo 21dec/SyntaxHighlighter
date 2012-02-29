@@ -103,7 +103,7 @@ var sh = {
 	regexLib : {
 		multiLineCComments			: /\/\*[\s\S]*?\*\//gm,
 		singleLineCComments			: /\/\/.*$/gm,
-		singleLinePerlComments		: /[^{]#.*$/gm,
+		singleLinePerlComments		: /#.*$/gm,
 		doubleQuotedString			: /"([^\\"\n]|\\.)*"/g,
 		singleQuotedString			: /'([^\\'\n]|\\.)*'/g,
 		multiLineDoubleQuotedString	: new XRegExp('"([^\\\\"]|\\\\.)*"', 'gs'),
